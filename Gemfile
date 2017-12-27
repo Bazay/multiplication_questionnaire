@@ -5,7 +5,5 @@ gemspec
 
 gem 'pry'
 
-group :test do
-  gem 'rspec-its'
-  gem 'rspec-collection_matchers'
-end
+gem 'rspec-its'
+gem 'rspec-collection_matchers'
