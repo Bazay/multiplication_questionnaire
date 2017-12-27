@@ -9,6 +9,7 @@ module MultiplicationQuestionnaire
     def initialize
       @printer = Printer.new
       @rounds = []
+      @start_time = Time.now
     end
 
     def play
@@ -32,7 +33,7 @@ module MultiplicationQuestionnaire
       end
 
       def show_game_summary
-        @printer.show_game_summary @rounds
+        @printer.show_game_summary @rounds, @start_time
       end
 
       def play_round

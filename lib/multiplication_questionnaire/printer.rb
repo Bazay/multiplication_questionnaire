@@ -21,12 +21,13 @@ module MultiplicationQuestionnaire
       puts question_round.to_s
     end
 
-    def show_game_summary question_rounds
+    def show_game_summary question_rounds, start_time
       print_title 'Game Summary'
       question_rounds.each do |question_round|
         show_round_summary question_round
       end
       puts "Overall score: #{sum_object_array(question_rounds, :correct_count)} / #{sum_object_array(question_rounds, :questions_per_round)}"
+      puts "Time taken: #{(Time.now - start_time).to_i}s"
     end
 
     private

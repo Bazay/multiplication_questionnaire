@@ -13,12 +13,13 @@
 2. After each consecutive round the summary should show the results for the last round and an overall correct answers to total questions asked score.
 For example:
 ```
-Last round:
+Round 1:
 
 1. 2 * 10 = 20 (correct)
 ...
 10. 7 * 7 = 48 (incorrect)
 
-Total score:
-19/20
+Round 1: 9/10
+Overall score: 9/10
+Time taken: 12s
 ```
